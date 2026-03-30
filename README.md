@@ -63,4 +63,4 @@ to the user's Startup registry (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Cu
 ## Contact
 Originally the Author left their Telegram handle so they could be contacted and potentially paid so ive replaced it with the cool picture of a cat :3 
 
-![Picture 4](https://dump.li/i/8675c1.jpeg)
+![Picture 4 ](https://dump.li/i/8675c1.jpeg)
